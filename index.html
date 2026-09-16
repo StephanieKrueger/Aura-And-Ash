@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aura &amp; Ash — Sanctuary for Movement &amp; Mind</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Link your external CSS file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <div class="logo">Aura <span>&amp;</span> Ash</div>
+    <nav class="nav-links">
+      <a href="#schedule">Class Schedule</a>
+      <a href="#pricing">Memberships</a>
+      <a href="#studio-tour">The Studio</a>
+      <a href="#community">Testimonials</a>
+      <a href="#pricing" class="nav-cta">Intro Offer</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="aura">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="embers" id="embers"></div>
+  </div>
+  <div class="grain"></div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-rule"></div>
+    <div class="eyebrow rise-in d1">Boutique Yoga &amp; Wellness Studio</div>
+    <h1 class="rise-in d2">Sanctuary for<br><em>Movement &amp; Mind.</em></h1>
+    <p class="lead rise-in d3">A serene, beautifully minimalist studio offering daily yoga, breathwork, and sound meditation classes for all levels. Step inside, leave the noise behind, and find your center.</p>
+    <div class="hero-btns rise-in d4">
+      <a href="#pricing" class="btn btn-glow">Claim Your Intro Offer</a>
+      <a href="#schedule" class="btn btn-ghost">View Class Schedule</a>
+    </div>
+    <div class="hero-stats rise-in d5">
+      <div class="stat"><b>18</b><span>Expert Guides</span></div>
+      <div class="stat"><b>42</b><span>Weekly Classes</span></div>
+      <div class="stat"><b>100%</b><span>Mats Included</span></div>
+      <div class="stat"><b>1</b><span>Sanctuary Space</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- STUDIO TOUR & PHOTO GALLERY -->
+<section id="studio-tour" class="studio-tour-sec">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="eyebrow">The Space</div>
+      <h2>Step Inside Aura &amp; Ash</h2>
+      <p>Designed with intention. Featuring abundant natural daylight, sustainable bamboo flooring, and an organic prop library curated for mindful movement.</p>
+    </div>
+
+    <div class="tour-grid fade">
+      <!-- Card 1 -->
+      <div class="tour-card">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Sustainable bamboo flooring">
+        </div>
+        <div class="tour-body">
+          <span class="tour-tag">Main Practice Room</span>
+          <h3>Sustainable Bamboo Flooring</h3>
+          <p>Warm, grounding acoustics and eco-friendly surfaces engineered for barefoot movement and sound immersion.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="tour-card">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Natural lighting">
+        </div>
+        <div class="tour-body">
+          <span class="tour-tag">Atmosphere</span>
+          <h3>Abundant Natural Daylight</h3>
+          <p>East-facing windows casting soft, organic morning light ideal for intentional flows and peaceful meditation.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="tour-card">
+        <div class="tour-img-wrap">
+          <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=80" alt="Prop library">
+        </div>
+        <div class="tour-body">
+          <span class="tour-tag">Amenities Included</span>
+          <h3>Curated Prop Library</h3>
+          <p>Access to premium organic cotton bolsters, cork blocks, meditation cushions, and sustainably sourced mats to support your practice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="alt">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="eyebrow">Live Schedule</div>
+      <h2>Find Your Flow</h2>
+      <p>From heat-building Vinyasa to deeply restorative Yin, reserve your mat in one of our daily guided practices.</p>
+    </div>
+
+    <div class="sched-bar fade">
+      <div class="filters" id="filters">
+        <button class="chip active" data-f="all">All Classes</button>
+        <button class="chip" data-f="vinyasa">Vinyasa Flow</button>
+        <button class="chip" data-f="restore">Restorative &amp; Yin</button>
+        <button class="chip" data-f="sound">Sound &amp; Meditation</button>
+      </div>
+      <div class="week-nav">
+        <button id="prev" aria-label="Previous week">‹</button>
+        <div class="week-label" id="weekLabel">Sep 14 – 19</div>
+        <button id="next" aria-label="Next week">›</button>
+      </div>
+    </div>
+
+    <div class="grid fade" id="grid"></div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="eyebrow">Memberships &amp; Passes</div>
+      <h2>Invest in Your Practice</h2>
+      <p>Whether you're visiting for the day or making this your second home, we have a pass that fits your lifestyle. Premium mats and towels are always included.</p>
+    </div>
+
+    <div class="tiers fade">
+      <div class="tier">
+        <h3>The Drop-In</h3>
+        <div class="who">For Visitors &amp; Guests</div>
+        <div class="price">$28<small>/class</small></div>
+        <div class="per">Single class pass · Valid for 30 days</div>
+        <ul>
+          <li>Access to any regular class</li>
+          <li>Premium mat &amp; towel provided</li>
+          <li>Organic tea lounge access</li>
+          <li>Contactless QR check-in</li>
+        </ul>
+        <a href="#schedule" class="btn btn-ghost">Book a Class</a>
+      </div>
+
+      <div class="tier featured">
+        <div class="tag">New Students</div>
+        <h3>Intro Offer</h3>
+        <div class="who">For First-Time Guests</div>
+        <div class="price">$45<small>/total</small></div>
+        <div class="per">14 Days of Unlimited Classes</div>
+        <ul>
+          <li>Unlimited yoga &amp; meditation</li>
+          <li>Test drive our full schedule</li>
+          <li>Premium mat &amp; towel provided</li>
+          <li>10% off retail &amp; workshops</li>
+          <li>No commitment required</li>
+        </ul>
+        <a href="#schedule" class="btn btn-glow">Start Your Trial</a>
+      </div>
+
+      <div class="tier">
+        <h3>The Unlimited</h3>
+        <div class="who">For Dedicated Practitioners</div>
+        <div class="price">$145<small>/mo</small></div>
+        <div class="per">Unlimited monthly access · Auto-renews</div>
+        <ul>
+          <li>Unlimited daily classes</li>
+          <li>2 guest passes per month</li>
+          <li>Priority booking for workshops</li>
+          <li>20% off retail purchases</li>
+          <li>Cancel anytime with 14 days notice</li>
+        </ul>
+        <a href="#schedule" class="btn btn-ghost">Become a Member</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPACE & AMENITIES -->
+<section id="space" class="alt">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="eyebrow">The Experience</div>
+      <h2>Designed to Disappear Into</h2>
+      <p>Every surface, light source, and texture was chosen so the room recedes and your practice takes focus.</p>
+    </div>
+
+    <div class="amen fade">
+      <div class="amen-card">
+        <div class="num">01</div>
+        <h3>Aesthetics &amp; Atmosphere</h3>
+        <ul>
+          <li>South-facing natural light with linen sheers</li>
+          <li>Sustainable bamboo flooring, sprung underlay</li>
+          <li>Adjustable ambient lighting presets</li>
+          <li>Sonos sound system for immersive audio</li>
+          <li>Warm stone walls &amp; lime-wash finish</li>
+        </ul>
+      </div>
+      <div class="amen-card">
+        <div class="num">02</div>
+        <h3>Props &amp; Equipment</h3>
+        <ul>
+          <li>Premium natural rubber mats provided</li>
+          <li>Cork &amp; foam blocks, full sets</li>
+          <li>Organic cotton bolsters and blankets</li>
+          <li>Buckwheat meditation cushions</li>
+          <li>Straps and resistance bands</li>
+        </ul>
+      </div>
+      <div class="amen-card">
+        <div class="num">03</div>
+        <h3>Student Comforts</h3>
+        <ul>
+          <li>Contactless QR studio check-in</li>
+          <li>Complimentary organic tea lounge</li>
+          <li>Two private changing rooms &amp; showers</li>
+          <li>Secure cubbies with phone charging</li>
+          <li>Fresh eucalyptus towels after heated flows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPOTLIGHTS -->
+<section id="community">
+  <div class="wrap">
+    <div class="sec-head fade">
+      <div class="eyebrow">Our Community</div>
+      <h2>Words from Our Students</h2>
+      <p>Don't just take our word for it. Here is what our community has to say about practicing at Aura &amp; Ash.</p>
+    </div>
+
+    <div class="quotes fade">
+      <div class="quote">
+        <div class="qt">"</div>
+        <p>The energy in this room is completely unmatched. I leave the Wednesday evening sound bath feeling like I’ve hit the reset button on my entire week.</p>
+        <div class="who-row">
+          <div class="av">SJ</div>
+          <div><b>Sarah Jenkins</b><span>Unlimited Member</span></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="qt">"</div>
+        <p>I love that I don't have to lug my mat to work. Everything is provided, the space is immaculate, and the instructors are incredibly welcoming.</p>
+        <div class="who-row">
+          <div class="av">MC</div>
+          <div><b>Marcus Chen</b><span>Drop-In Student</span></div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="qt">"</div>
+        <p>The intro offer is the best investment I've made. It gave me a chance to try different teachers and find the flows that work best for my body.</p>
+        <div class="who-row">
+          <div class="av">EL</div>
+          <div><b>Elena Lopez</b><span>Unlimited Member</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND / BOOKING -->
+<section id="book" class="band">
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:18px">Start Your Wellness Journey</div>
+    <h2>Ready to Step<br><em>Onto the Mat?</em></h2>
+    <p>Grab our New Student Special to get 14 days of unlimited classes for just $45. We can't wait to practice with you.</p>
+    <div class="band-btns">
+      <button class="btn btn-glow" onclick="window.location.href='#pricing'">Claim Intro Offer</button>
+      <a href="#schedule" class="btn btn-ghost">Browse the Schedule</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:18px">Aura <span>&amp;</span> Ash</div>
+        <p style="max-width:290px">A boutique wellness and yoga space dedicated to mindful movement, breath, and community.</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <a href="#schedule">Class Schedule</a>
+        <a href="#pricing">Memberships</a>
+        <a href="#studio-tour">The Space</a>
+        <a href="#community">Testimonials</a>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>412 Alder Street</p>
+        <p>Suite 2, Lower Level</p>
+        <p>Tue–Sun · 6a – 9p</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="#">hello@auraandash.studio</a>
+        <a href="#">(612) 555-0184</a>
+        <p style="margin-top:18px;font-size:.78rem">Accessible entry &amp; all-gender restrooms on site.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Aura &amp; Ash Studio. All rights reserved.</span>
+      <span>Sanctuary for Movement &amp; Mind.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Link your external JS file -->
+<script src="script.js"></script>
+</body>
+</html>
